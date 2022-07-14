@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <div id="res">
+        </div>
+
+        <div id="btns">
+            <button onclick="limpar()" class="reset">C</button>
+            <button onclick="clicar('&#40')" class="aux">(</button>
+            <button onclick="clicar('&#41')" class="aux">)</button>
+            <button onclick="clicar('/')" class="op">/</button>
+
+            <button onclick="clicar(1)" class="num">1</button>
+            <button onclick="clicar(2)" class="num">2</button>
+            <button onclick="clicar(3)" class="num">3</button>
+            <button onclick="clicar('*')" class="op">x</button>
+
+            <button onclick="clicar(4)" class="num">4</button>
+            <button onclick="clicar(5)" class="num">5</button>
+            <button onclick="clicar(6)" class="num">6</button>
+            <button onclick="clicar('+')" class="op">+</button>
+
+            <button onclick="clicar(7)" class="num">7</button>
+            <button onclick="clicar(8)" class="num">8</button>
+            <button onclick="clicar(9)" class="num">9</button>
+            <button onclick="clicar('-')" class="op">-</button>
+
+            <button onclick="deletar()" class="del">&lt</button>
+            <button onclick="clicar(0)" class="num">0</button>
+            <button onclick="clicar('.')" class="aux">.</button>
+            <button onclick="calcular()" class="result">=</button>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>&copy; João Vitor Ribeiro Fernandes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
